@@ -15,7 +15,8 @@ public class ColourComparison {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
+		System.out.println("git example");
+		System.out.println("git example2");
 		
 		String textcolour = driver.findElement(By.xpath("//div[@id='globalContainer']/div/div/div/div/div/div[2]")).getCssValue("color");
 		String bacgroundolour = driver.findElement(By.xpath("//div[@id='globalContainer']/div/div/div/div/div/div[2]")).getCssValue("background");
