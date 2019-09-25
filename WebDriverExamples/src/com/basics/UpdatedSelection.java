@@ -18,6 +18,9 @@ public class UpdatedSelection {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.yatra.com/");
 		driver.manage().window().maximize();
+		
+		System.out.println("navigated to url");
+		System.out.println("webpage maximized");
 
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

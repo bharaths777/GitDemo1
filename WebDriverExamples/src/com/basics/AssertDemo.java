@@ -17,7 +17,8 @@ public class AssertDemo {
 		driver.get("https://www.spicejet.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
+		System.out.println("navigated to url");
+		System.out.println("webpage maximized");
 		boolean actual = driver.findElement(
 				By.id("ctl00_mainContent_chk_SeniorCitizenDiscount"))
 				.isSelected();

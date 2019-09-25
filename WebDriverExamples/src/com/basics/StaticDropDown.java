@@ -20,7 +20,8 @@ public class StaticDropDown {
 		driver.get("https://www.spicejet.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
+		System.out.println("navigated to url");
+		System.out.println("webpage maximized");
 		WebElement currency = driver.findElement(By.name("ctl00$mainContent$DropDownListCurrency"));
 		
 		Select sel = new Select(currency);
